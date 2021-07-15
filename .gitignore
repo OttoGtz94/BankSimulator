@@ -1,1 +1,3 @@
 client-bank/node_modules
+server-bank/node_modules
+server-bank/variables.env
