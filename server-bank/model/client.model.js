@@ -28,27 +28,32 @@ const clientSchema = new Schema({
 		dateBirth: String,
 	},
 	cards: {
-		credit: {
-			idCreditCard: String,
-			cardType: String,
-			numberCard: Number,
-			numberSecurity: Number,
-			dateActivation: String,
-			dateExpiration: String,
-			nip: Number,
-			creditLimit: String,
-			creditUse: String,
-		},
-		debit: {
-			idDebitCard: String,
-			cardType: String,
-			numberCard: Number,
-			numberSecurity: Number,
-			dateActivation: String,
-			dateExpiration: String,
-			nip: Number,
-			balance: String,
-		},
+		credit: [
+			{
+				idCreditCard: String,
+				cardType: String,
+				numberCard: Number,
+				numberSecurity: Number,
+				dateActivation: String,
+				dateExpiration: String,
+				nip: Number,
+				creditLimit: String,
+				creditUse: String,
+			},
+		],
+
+		debit: [
+			{
+				idDebitCard: String,
+				cardType: String,
+				numberCard: Number,
+				numberSecurity: Number,
+				dateActivation: String,
+				dateExpiration: String,
+				nip: Number,
+				balance: String,
+			},
+		],
 	},
 });
 
